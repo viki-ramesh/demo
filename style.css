@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* for noraml tetx */
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Rokkitt', serif; */
+
+@font-face {
+    font-family: themeFont;
+    src: url(./font/bBigerOver.ttf);
+}
+
+:root {
+    /* Font Size For Desktop */
+
+    --Headings: 3rem;
+    --subHeadings: 2.8rem;
+    --Titles: 2rem;
+    --subTitles: 1.3rem;
+    --pragraph: 1rem;
+
+    --border-radius: 5px;
+    --btn-border-radius: 3px;
+
+    /*  Small screens, laptops */
+
+    --laptop-Headings: 2.8rem;
+    --laptop-subHeadings: 2.5rem;
+    --laptop-Titles: 1.7rem;
+    --laptop-subTitles: 1rem;
+    --laptop-pragraph: 0.7rem;
+
+    /* iPads, Tablets */
+
+    --tablets-Headings: 2.2rem;
+    --tablets-subHeadings: 1.5rem;
+    --tablets-Titles: 1.2rem;
+    --tablets-subTitles: 1rem;
+    --tablets-pragraph: 0.9rem;
+
+    /* Font Size For mobiles */
+
+    --mobiles-Headings: 2rem;
+    --mobiles-subHeadings: 1.3rem;
+    --mobiles-Titles: 1rem;
+    --mobiles-subTitles: 0.8rem;
+    --mobiles-pragraph: 0.7rem;
+
+    --mobile-border-radius: 3px;
+
+    /* colors */
+    --body-background: #101012;
+    --theme-color: #FF5500;
+    --card-color: #141414;
+    --text-color: #ffffff;
+    --light-text-color: #BCBCBC;
+
+    /* shadow */
+    --shadow: 5px 5px 10px rgba(12, 12, 12, 0.123);
+
+}
+
+h1 {
+    font-size: var(--Headings);
+}
+
+h2 {
+
+    font-size: var(--subHeadings);
+}
+
+h3 {
+
+    font-size: var(--Titles);
+}
+
+h4 {
+
+    font-size: var(--subTitles);
+}
+
+p {
+    font-size: var(--pragraph);
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    font-size: var(--subTitles);
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rokkitt', serif;
+    color: var(--text-color);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-background);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-areas: "sidebar content";
+    grid-gap: 1rem;
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--card-color);
+    box-shadow: var(--shadow);
+}
+
+
+
+/* desgining side bar */
+
+/* sidebar itmes */
+
+.sidebar-items {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-div {
+    visibility: hidden;
+    display: none;
+}
+
+/* logo div */
+.logo-div {
+    width: 100%;
+    height: 10vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo-div .igoarena-logo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.sidebar-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sidebar-items ul {
+    min-height: 90%;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sidebar-items ul li {
+    margin-bottom: 15px;
+    padding: 20px;
+    background: url(images/btn_back.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.sidebar-items ul li:hover {
+    background: url(images/btn_back_active.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sidebar-items .btn_active {
+    background: none;
+    background-image: url(images/btn_back_active.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sidebar-items ul li a {
+    font-family: themeFont;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: var(--pragraph);
+    text-align: center;
+}
+
+/* side bar contact us button */
+
+.contact-us-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    justify-content: center;
+    height: 100%;
+    min-height: 10%;
+    width: 100%;
+
+}
+
+.contact-us-sidebar button {
+    width: 55%;
+    height: 50%;
+    background-color: var(--theme-color);
+    border: none;
+    border-radius: var(--btn-border-radius);
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.contact-us-sidebar p {
+    color: var(--light-text-color);
+    text-transform: lowercase;
+}
+
+/* content start here */
+
+.content {
+    grid-area: content;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 1rem;
+}
+
+
+/* Image Slider */
+.image-slider {
+    width: 100%;
+    height: 50vh;
+    padding: 20px 0 0 0;
+    position: relative;
+
+}
+
+.slider-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    background-color: #00000071;
+    z-index: 1;
+}
+
+.sliderimage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.slider-text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 10px 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider-text h1,
+span {
+    font-family: themeFont;
+    font-size: var(--laptop-subHeadings);
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+
+}
+
+.slider-text h1 span {
+    color: var(--theme-color);
+}
+
+
+/* top-altcoins */
+
+.top-altcoins {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 01fr);
+    height: 20vh;
+    column-gap: 1rem;
+}
+
+.altprice-card {
+    width: 100%;
+    height: 100%;
+    background-color: var(--card-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+}
+
+.price-chart {
+    margin-top: auto;
+    width: 100%;
+    height: 60%;
+}
+
+.alt-info {
+    padding: 10px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+
+}
+
+.alt-icon {
+    flex: .5;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.alt-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.alt-name {
+    flex: 1.5;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    
+}
+
+.alt-name .altcoin-name {
+    font-weight: 400;
+}
+
+.alt-price-percent {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    
+    
+}
+
+.alt-price-percent h4,i {
+    color: #28A745;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* .alt-icon {
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.altcoin {
+    padding: 4px;
+}
+
+
+.alt-up {
+    margin-left: 50px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: green;
+}
+
+.alt-up i,
+h4 {
+
+    align-self: center;
+    font-size: var(--subTitles);
+    font-weight: 400;
+} */
+
+
+/* .alt-content-div-2 {
+
+} */
+
+/* Mobile devices */
+@media (min-width: 360px) and (max-width: 768px) {
+    h1 {
+        font-size: var(--mobiles-Headings);
+    }
+
+    h2 {
+
+        font-size: var(--mobiles-subHeadings);
+    }
+
+    h3 {
+
+        font-size: var(--mobiles-Titles);
+    }
+
+    h4 {
+
+        font-size: var(--mobiles-subTitles);
+    }
+
+    p {
+        font-size: var(--mobiles-pragraph);
+        font-weight: 200;
+    }
+
+
+    /* Dividing in two part main webstie */
+    .container {
+        display: grid;
+        grid-template-columns: 100% 100%;
+        grid-template-rows: 50px 100%;
+        grid-template-areas:
+            "sidebar"
+            "content";
+        grid-gap: 1rem;
+    }
+
+
+    .sidebar {
+        grid-area: sidebar;
+        width: 100%;
+        height: 100%;
+        background-color: var(--card-color);
+        box-shadow: var(--shadow);
+    }
+
+    .content {
+        grid-area: content;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    /* desgining side bar */
+
+    /* sidebar itmes */
+
+    .sidebar-items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    /* logo div */
+    .logo-div {
+        width: 30vh;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .logo-div .igoarena-logo {
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+
+    }
+
+    .menu-div {
+        visibility: visible;
+        width: 10vh;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        z-index: 999;
+        position: absolute;
+    }
+
+    #mobile-menu-btn {
+        width: 30px;
+        height: 30px;
+        align-self: center;
+
+    }
+
+    .sidebar-list {
+        z-index: 998;
+        position: absolute;
+        height: 100vh;
+        width: 35vh;
+        background-color: var(--card-color);
+        box-shadow: var(--shadow);
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .75s ease;
+    }
+
+    .sidebar-items ul {
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+        width: 100%;
+    }
+
+
+    .sidebar-items ul li {
+        margin-bottom: 15px;
+        padding: 20px;
+        background: url(images/btn_back.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .sidebar-items ul li:hover {
+        background: url(images/btn_back_active.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .sidebar-items .btn_active {
+        background: none;
+        background-image: url(images/btn_back_active.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .sidebar-items ul li a {
+        font-family: themeFont;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: var(--pragraph);
+        text-align: center;
+    }
+
+    /* side bar contact us button */
+    .contact-us-sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+        justify-content: center;
+        width: 100%;
+        min-height: 10%;
+    }
+
+    .contact-us-sidebar button {
+        width: 50%;
+        height: 40%;
+        background-color: var(--theme-color);
+        border: none;
+        border-radius: var(--btn-border-radius);
+        letter-spacing: 2px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+
+        cursor: pointer;
+    }
+
+    .contact-us-sidebar p {
+        color: var(--light-text-color);
+        text-transform: lowercase;
+        font-size: var(--mobiles-pragraph);
+    }
+
+    /* contaier start here */
+
+}
+
+
+
+
+
+/* iPads, Tablets */
+/* @media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: var(--laptop-Headings);
+    }
+
+    h2 {
+
+        font-size: var(--laptop-subHeadings);
+    }
+
+    h3 {
+
+        font-size: var(--laptop-Titles);
+    }
+
+    h4 {
+
+        font-size: var(--laptop-subTitles);
+    }
+
+    p {
+        font-size: var(--laptop-pragraph);
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 100% 100%;
+        grid-template-rows: 100px 100%;
+        grid-template-areas:
+            "sidebar"
+            "content";
+        grid-gap: 1rem;
+    }
+
+
+    .sidebar {
+        grid-area: sidebar;
+        width: 100%;
+        height: 100%;
+        background-color: var(--card-color);
+        box-shadow: var(--shadow);
+    }
+
+    .content {
+        grid-area: content;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--card-color);
+    }
+
+} */
+
+/* Small screens, laptops */
+/* @media (min-width: 1024px) and (max-width: 1200px) {
+    h1 {
+        font-size: var(--tablets-Headings);
+    }
+
+    h2 {
+
+        font-size: var(--tablets-subHeadings);
+    }
+
+    h3 {
+
+        font-size: var(--tablets-Titles);
+    }
+
+    h4 {
+
+        font-size: var(--tablets-subTitles);
+    }
+
+    p {
+        font-size: var(--tablets-pragraph);
+    }
+} */
+
+/* Desktops, large screens */
+/* @media only screen and (max-width: 1200px) {} */
+
+/* MExtra large screens, TV */
+/* @media only screen and (min-width: 1201px) {} */
