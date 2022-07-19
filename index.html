@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
-        integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
 
     <link rel="stylesheet" href="style.css">
@@ -56,62 +55,373 @@
             </div>
 
             <!-- top alt coins -->
-            <div class="top-altcoins">
-                
-                <div class="bitcoin altprice-card">
+            <!-- <div class="top-altcoins">
+                <cards class="alt-cards"> -->
 
-                    <div class="alt-info">
+            <!-- BITCOIN PRICE -->
+            <!-- <bitcoin style="width:30%;" class="btc">
+                        <card class="assest-info">
+                            <div class="alt-title">
+                                <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg"
+                                    alt="bitcoin-logo" width="15%">
+                                <h3>Bitcoin</h3>
+                            </div>
+                            <div class="alt-details">
+                                <h4 class="alt-price" id="btcPrice"></h4>
+                            </div>
+                        </card>
+                        <canvas id="btcChart"></canvas>
+                    </bitcoin> -->
 
-                        <div class="alt-icon"><img class="alt-icon" src="images/bnb-icon2_2x.webp" alt=""></div>
-                        <div class="alt-name">
-                            <h4 class="altcoin-name">Bitcoin</h4>
-                            <h4>$ 21,545</h4>
+
+            <!-- ETHeRUM PRICE -->
+            <!-- <ethereum style="width:30%;" class="ethereum">
+                        <card class="assest-info">
+                            <div class="alt-title">
+                                <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/eth.svg"
+                                    alt="ethereum-logo" width="10%">
+                                <h3>Ethereum</h3>
+                            </div>
+                            <div class="alt-details">
+                                <h4 class="alt-price" id="ethPrice"></h4>
+                            </div>
+                        </card>
+                        <canvas id="ethereumChart"></canvas>
+                    </ethereum> -->
+
+
+            <!-- BNB PRICE -->
+
+            <!-- <bnb style="width:30%;" class="bnb">
+                        <card class="assest-info">
+                            <div class="alt-title">
+                                <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/bnb.svg"
+                                    alt="bnb-logo" width="10%">
+                                <h3>Binance</h3>
+                            </div>
+                            <div class="alt-details">
+                                <h4 class="alt-price" id="bnbPrice"></h4>
+                            </div>
+                        </card>
+                        <canvas id="bnbChart"></canvas>
+                    </bnb>
+
+                </cards> -->
+
+            <!-- </div> -->
+
+            <!-- Trending IGO -->
+            <div class="trending-igo-section">
+                <h2 class="trending-igo-title">Trending IGO</h2>
+                <div class="trending-igo">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+
+                                    <div class="igo-header">
+                                        <div class="back-layer"></div>
+                                        <img src="images/lol.jpg" class="igo-back" alt="">
+                                        <img src="images/lol-logo.svg" class="igo-logo" alt="">
+                                        <h3>#1</h3>
+                                    </div>
+
+                                    <div class="igo-analysis">
+                                        <div class="igo-hasgtag">
+                                            <p>#TopIGO</p>
+                                            <p>#LOL</p>
+                                            <p>#Play2Earn</p>
+                                        </div>
+                                        <div class="igo-name-views">
+                                            <h4 class="igo-name">League of Legends</h4>
+                                            <div class="igo-view-div">
+                                                <i class="material-icons">visibility</i>
+                                                <h5 class="igo-views">175.5k</h5>
+                                            </div>
+
+                                            <div class="igo-anlysis-div">
+                                               
+                                                <div class="igo-rating anlysis">
+                                                    <i class="material-icons">star_border</i>
+                                                    <h5 class="igo-rating"><h5>5<small>/10</small></h5>
+                                                </div>
+
+                                                <div class="igo-likes anlysis">
+                                                    <i class="material-icons">thumb_up</i>
+                                                    <h5 class="igo-likesews"><h5>10k</h5>
+                                                </div>
+                                                <div class="igo-token-type anlysis">
+                                                    <h5 class="igo-token-typeews">ERC-20</h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="igo-discrption">
+                                        <p>Engines Of Fury Is A Runescape-Like Duel Arena Game Built On Unity With Rich 3D Visuals And Numerous Addictive Single & Multiplayer Gameplay Modes.</p>
+                                        <div class="igo-contact">
+                                            <img src="images/website.png" alt="">
+                                            <img src="images/telegram.png" alt="">
+                                            <img src="images/twitter.png" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div class="igo-fullreview-btn">
+                                        <div class="review-btn">
+                                            <h4>Full Review</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+
+                                    <div class="igo-header">
+                                        <div class="back-layer"></div>
+                                        <img src="images/tr_igo2.jpg" class="igo-back" alt="">
+                                        <img src="images/eof-logo.png" class="igo-logo" alt="">
+                                        <h3>#2</h3>
+                                    </div>
+
+                                    <div class="igo-analysis">
+                                        <div class="igo-hasgtag">
+                                            <p>#TopIGO</p>
+                                            <p>#LOL</p>
+                                            <p>#Play2Earn</p>
+                                        </div>
+                                        <div class="igo-name-views">
+                                            <h4 class="igo-name">Engine of Furys</h4>
+                                            <div class="igo-view-div">
+                                                <i class="material-icons">visibility</i>
+                                                <h5 class="igo-views">15.5k</h5>
+                                            </div>
+
+                                            <div class="igo-anlysis-div">
+                                               
+                                                <div class="igo-rating anlysis">
+                                                    <i class="material-icons">star_border</i>
+                                                    <h5 class="igo-rating"><h5>5.5<small>/10</small></h5>
+                                                </div>
+
+                                                <div class="igo-likes anlysis">
+                                                    <i class="material-icons">thumb_up</i>
+                                                    <h5 class="igo-likesews"><h5>15k</h5>
+                                                </div>
+                                                <div class="igo-token-type anlysis">
+                                                    <h5 class="igo-token-typeews">BSC-20</h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="igo-discrption">
+                                        <p>Engines Of Fury Is A Runescape-Like Duel Arena Game Built On Unity With Rich 3D Visuals And Numerous Addictive Single & Multiplayer Gameplay Modes.</p>
+                                        <div class="igo-contact">
+                                            <img src="images/website.png" alt="">
+                                            <img src="images/telegram.png" alt="">
+                                            <img src="images/twitter.png" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div class="igo-fullreview-btn">
+                                        <div class="review-btn">
+                                            <h4>Full Review</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+
+                                    <div class="igo-header">
+                                        <div class="back-layer"></div>
+                                        <img src="images/tr_igo3.jpg" class="igo-back" alt="">
+                                        <img src="images/d2logo.png" class="igo-logo" alt="">
+                                        <h3>#3</h3>
+                                    </div>
+
+                                    <div class="igo-analysis">
+                                        <div class="igo-hasgtag">
+                                            <p>#TopIGO</p>
+                                            <p>#LOL</p>
+                                            <p>#Play2Earn</p>
+                                        </div>
+                                        <div class="igo-name-views">
+                                            <h4 class="igo-name">Day 2 Light</h4>
+                                            <div class="igo-view-div">
+                                                <i class="material-icons">visibility</i>
+                                                <h5 class="igo-views">175.5k</h5>
+                                            </div>
+
+                                            <div class="igo-anlysis-div">
+                                               
+                                                <div class="igo-rating anlysis">
+                                                    <i class="material-icons">star_border</i>
+                                                    <h5 class="igo-rating"><h5>5<small>/10</small></h5>
+                                                </div>
+
+                                                <div class="igo-likes anlysis">
+                                                    <i class="material-icons">thumb_up</i>
+                                                    <h5 class="igo-likesews"><h5>10k</h5>
+                                                </div>
+                                                <div class="igo-token-type anlysis">
+                                                    <h5 class="igo-token-typeews">ERC-20</h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="igo-discrption">
+                                        <p>Engines Of Fury Is A Runescape-Like Duel Arena Game Built On Unity With Rich 3D Visuals And Numerous Addictive Single & Multiplayer Gameplay Modes.</p>
+                                        <div class="igo-contact">
+                                            <img src="images/website.png" alt="">
+                                            <img src="images/telegram.png" alt="">
+                                            <img src="images/twitter.png" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div class="igo-fullreview-btn">
+                                        <div class="review-btn">
+                                            <h4>Full Review</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+
+                                    <div class="igo-header">
+                                        <div class="back-layer"></div>
+                                        <img src="images/tr_igo4.jpg" class="igo-back" alt="">
+                                        <img src="images/god.png" class="igo-logo" alt="">
+                                        <h3>#4</h3>
+                                    </div>
+
+                                    <div class="igo-analysis">
+                                        <div class="igo-hasgtag">
+                                            <p>#TopIGO</p>
+                                            <p>#LOL</p>
+                                            <p>#Play2Earn</p>
+                                        </div>
+                                        <div class="igo-name-views">
+                                            <h4 class="igo-name">God Of War</h4>
+                                            <div class="igo-view-div">
+                                                <i class="material-icons">visibility</i>
+                                                <h5 class="igo-views">175.5k</h5>
+                                            </div>
+
+                                            <div class="igo-anlysis-div">
+                                               
+                                                <div class="igo-rating anlysis">
+                                                    <i class="material-icons">star_border</i>
+                                                    <h5 class="igo-rating"><h5>5<small>/10</small></h5>
+                                                </div>
+
+                                                <div class="igo-likes anlysis">
+                                                    <i class="material-icons">thumb_up</i>
+                                                    <h5 class="igo-likesews"><h5>10k</h5>
+                                                </div>
+                                                <div class="igo-token-type anlysis">
+                                                    <h5 class="igo-token-typeews">ERC-20</h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="igo-discrption">
+                                        <p>Engines Of Fury Is A Runescape-Like Duel Arena Game Built On Unity With Rich 3D Visuals And Numerous Addictive Single & Multiplayer Gameplay Modes.</p>
+                                        <div class="igo-contact">
+                                            <img src="images/website.png" alt="">
+                                            <img src="images/telegram.png" alt="">
+                                            <img src="images/twitter.png" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div class="igo-fullreview-btn">
+                                        <div class="review-btn">
+                                            <h4>Full Review</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-content">
+
+                                    <div class="igo-header">
+                                        <div class="back-layer"></div>
+                                        <img src="images/tr_igo5.jpg" class="igo-back" alt="">
+                                        <img src="images/metrologo.png" class="igo-logo" alt="">
+                                        <h3>#5</h3>
+                                    </div>
+
+                                    <div class="igo-analysis">
+                                        <div class="igo-hasgtag">
+                                            <p>#TopIGO</p>
+                                            <p>#LOL</p>
+                                            <p>#Play2Earn</p>
+                                        </div>
+                                        <div class="igo-name-views">
+                                            <h4 class="igo-name">Metro Excudo</h4>
+                                            <div class="igo-view-div">
+                                                <i class="material-icons">visibility</i>
+                                                <h5 class="igo-views">105.5k</h5>
+                                            </div>
+
+                                            <div class="igo-anlysis-div">
+                                               
+                                                <div class="igo-rating anlysis">
+                                                    <i class="material-icons">star_border</i>
+                                                    <h5 class="igo-rating"><h5>9<small>/10</small></h5>
+                                                </div>
+
+                                                <div class="igo-likes anlysis">
+                                                    <i class="material-icons">thumb_up</i>
+                                                    <h5 class="igo-likesews"><h5>100k</h5>
+                                                </div>
+                                                <div class="igo-token-type anlysis">
+                                                    <h5 class="igo-token-typeews">ERC-20</h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="igo-discrption">
+                                        <p>Engines Of Fury Is A Runescape-Like Duel Arena Game Built On Unity With Rich 3D Visuals And Numerous Addictive Single & Multiplayer Gameplay Modes.</p>
+                                        <div class="igo-contact">
+                                            <img src="images/website.png" alt="">
+                                            <img src="images/telegram.png" alt="">
+                                            <img src="images/twitter.png" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div class="igo-fullreview-btn">
+                                        <div class="review-btn">
+                                            <h4>Full Review</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="alt-price-percent">
-                            <h4><i class="material-icons">arrow_upward</i> 3.2%</h4>
-                        </div>
-                    </div>
-                    <div class="price-chart">
-                        <canvas id="myChart"></canvas>
                     </div>
                 </div>
-                <div class="etherum altprice-card">
-                    <div class="alt-info">
 
-                        <div class="alt-icon"><img class="alt-icon" src="images/bnb-icon2_2x.webp" alt=""></div>
-                        <div class="alt-name">
-                            <h4 class="altcoin-name">Bitcoin (BTC) </h4>
-                            <h4>$ 21,545</h4>
-                        </div>
-                        <div class="alt-price-percent">
-                            <h4><i class="material-icons">arrow_upward</i> 3.2%</h4>
-                        </div>
-                    </div>
-                    <div class="price-chart">
-                        <canvas id="myChart2"></canvas>
-                    </div>
-                </div>
-                <div class="bnb altprice-card">
-                    <div class="alt-info">
 
-                        <div class="alt-icon"><img class="alt-icon" src="images/bnb-icon2_2x.webp" alt=""></div>
-                        <div class="alt-name">
-                            <h4 class="altcoin-name">Bitcoin (BTC) </h4>
-                            <h4>$ 21,545</h4>
-                        </div>
-                        <div class="alt-price-percent">
-                            <h4><i class="material-icons">arrow_upward</i> 3.2%</h4>
-                        </div>
-                    </div>
-                    <div class="price-chart">
-                        <canvas id="myChart3"></canvas>
-                    </div>
-                </div>
             </div>
+
         </div>
     </div>
 
 </body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
 
 </html>
