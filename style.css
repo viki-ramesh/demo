@@ -385,7 +385,7 @@ card h3 {
 .swiper-container {
     width: 100%;
     overflow: hidden;
-    margin-bottom: 50px;
+
 }
 
 
@@ -451,7 +451,7 @@ card h3 {
 .igo-header {
     height: 100%;
     position: relative;
-    
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -465,7 +465,7 @@ card h3 {
     height: 100%;
     padding-left: 5px;
     padding-right: 5px;
-    
+
 }
 
 .igo-discrption {
@@ -526,6 +526,11 @@ card h3 {
     letter-spacing: 1.5px;
 }
 
+.igo-analysis .igo-name-views .igo-token-type {
+    font-weight: 400;
+    color: var(--light-text-color);
+}
+
 .igo-analysis .igo-views {
     font-weight: 400;
     letter-spacing: 1.5px;
@@ -543,6 +548,10 @@ card h3 {
 
 .igo-analysis i {
     font-size: 12px;
+}
+
+small {
+    color: var(--light-text-color);
 }
 
 .igo-analysis .igo-anlysis-div {
@@ -597,6 +606,180 @@ card h3 {
     height: 100%;
     background-color: var(--theme-color);
     border-radius: var(--btn-border-radius);
+}
+
+/* All IGO */
+.all-igo {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+
+.igo-1 {
+    width: 95%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.all-igo-img {
+    width: 30%;
+    height: 80%;
+    background-color: var(--card-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    position: absolute;
+
+}
+
+.all-igo-details {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--card-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    z-index: 10;
+    right: 0;
+}
+
+
+.all-igo-img-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.all-igo-img-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.all-igo-img-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000071;
+
+}
+
+.all-igo-img-content h4 {
+    position: absolute;
+    margin: 5px;
+    padding: 0 10px 0 10px;
+    background-color: var(--theme-color);
+    border-radius: var(--btn-border-radius);
+}
+
+.all-igo-logo-div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-igo-img-logo {
+
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.all-igo-hasgtag {
+    display: flex;
+    gap: 5px;
+    padding: 5px 10px;
+
+}
+
+.all-igo-hasgtag p {
+    color: #0066FF;
+}
+
+.all-igo-name {
+    padding-left: 10px;
+}
+
+.all-igo-name h4 {
+    letter-spacing: 1.5px;
+
+}
+
+.all-igo-name p {
+    color: #3E3E3E;
+    font-weight: 600;
+}
+
+.all-igo-analysis {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.all-igo-analysis-card {
+    width: 50%;
+    min-height: 32px;
+    background-color: #1E1E1E;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 1.5px;
+}
+
+.all-igo-analysis-card i {
+    font-size: 12px;
+}
+
+.all-igo-discription {
+    padding: 5px 10px;
+}
+
+.all-igo-discription p {
+    text-align: left;
+    text-align: justify;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--light-text-color);
+}
+
+.all-igo-fullreview-btn {
+    width: 100%;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.all-igo-review-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 30px;
+    background-color: var(--theme-color);
+    border-radius: var(--btn-border-radius);
+    font-weight: 600;
+   
 }
 
 /* Mobile devices */
@@ -917,6 +1100,27 @@ card h3 {
         border-radius: 0px 0px var(--border-radius) var(--border-radius);
     }
 
+
+
+
+
+
+
+    .all-igo {
+        width: 100%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .igo-1 {
+        width: 100%;
+        height: 210px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
 
 }
 
